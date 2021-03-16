@@ -1,6 +1,6 @@
 {
-  "title": "RegEx",
-  "description": "This custom element allows you to add regular expression for your Text element.",
+  "title": "RegEx extension",
+  "description": "¨With this element you can extend the Text element by a regular expression for its validation.",
   "thumbnailUrl": "../assets/Regex.gif",
   "readmeUrl": "https://github.com/hzik/RegEx",
   "categories": [
