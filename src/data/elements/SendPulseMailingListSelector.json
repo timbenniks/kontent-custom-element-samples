@@ -2,7 +2,7 @@
     "title": "SendPulse Mailing List Selector",
     "description": "The SendPulse Mailing List Selector allows you to retrieve mailing lists from SendPulse.",
     "thumbnailUrl": "../assets/SendPulseMailingListSelector.gif",
-    "readmeUrl": "https://github.com/JKannekens/kontent-custom-element-sendpulse",
+    "readmeUrl": "https://github.com/Kentico/kontent-custom-element-sendpulse",
     "categories": [
         "Other"
     ]
