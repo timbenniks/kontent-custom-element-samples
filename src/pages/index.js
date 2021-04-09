@@ -11,11 +11,14 @@ import useDebounce from "../helpers/useDebounce"
 const IndexPage = () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      {
         categories: allElementsJson {
           distinct(field: categories)
         }
-        elements: allElementsJson(sort: { fields: title }) {
+        techs: allElementsJson {
+          distinct(field: tech)
+        }
+        elements: allElementsJson(sort: {fields: [core, title]}) {
           edges {
             node {
               id
@@ -26,6 +29,8 @@ const IndexPage = () => {
                 publicURL
               }
               categories
+              tech
+              core
             }
           }
         }
@@ -99,6 +104,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <a href="https://kontent.ai" target="_blank"><div id="logo"><img src="https://kontent.ai/img/general/logo.svg"></img></div></a>
       <section className="section grid">
         <div className="grid__row">
           <div className="grid__col grid__col--12">
@@ -109,19 +115,18 @@ const IndexPage = () => {
                   <strong className="highlight">.</strong>
                 </h2>
               </div>
-              <div className="grid__row">
-                <div className="grid__col grid__col--12 grid__col--md-3 grid__col--lg-span-2 grid__col--lg-2 js-integrations-filter-wrapper">
-                  <div className="js-integrations-filter">
-                    {activeFilter}
-                    <FilterList
-                      title="Category"
-                      categories={categories}
-                      onToggleCategory={c => toggleCategory(c)}
-                      onChangeSearchText={t => setSearchText(t)}
-                    />
-                  </div>
+              <div >
+                <div className="js-integrations-filter">
+                  <FilterList
+                    title=""
+                    categories={categories}
+                    onToggleCategory={c => toggleCategory(c)}
+                    onChangeSearchText={t => setSearchText(t)}
+                  />
                 </div>
-                <div className="grid__col grid__col--12 grid__col--md-9 grid__col--lg-7">
+              </div>
+              <div className="grid__row">
+                <div className="grid__col grid__col--12">
                   <CustomElementCardList customElements={filteredElements} />
                 </div>
               </div>
@@ -159,7 +164,9 @@ function satisfiesSearchTextFilter(element, searchText) {
     const descriptionHasMatch = textHasMatch(element.description, searchText)
     const categories = element.categories.join(" ")
     const categoriesHasMatch = textHasMatch(categories, searchText)
-    return titleHasMatch || descriptionHasMatch || categoriesHasMatch
+    const techHasMatch = element.tech ? textHasMatch(element.tech, searchText) : false
+    const coreHasMatch = element.core ? textHasMatch("core integration", searchText) : false
+    return titleHasMatch || descriptionHasMatch || categoriesHasMatch || techHasMatch || coreHasMatch
   }
   return true
 }

@@ -4,13 +4,31 @@ import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 function CustomElementCardListItem({ customElement }) {
   return (
-    <div className="card card--lg-2">
+    < div className="card card--lg-2" >
+      {
+        customElement.core &&
+        <div class="tag core tag--orange">CORE INTEGRATION</div>
+      }
+      <div className="card__content_bottom categories">
+        {customElement.categories &&
+          customElement.categories.map((c, i) => (
+            <span
+              key={i}
+              className="tag"
+              style={{
+                margin: "3px",
+              }}
+            >
+              {c}
+            </span>
+          ))}
+      </div>
       <a
         href={customElement.readmeUrl}
         className="card__link-outer"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={e=>{
+        onClick={e => {
           trackCustomEvent({
             category: "CESG",
             action: "Click Detail",
@@ -34,22 +52,20 @@ function CustomElementCardListItem({ customElement }) {
         <div className="card__description">
           <p>{customElement.description}</p>
         </div>
-        <div className="card__content-bottom">
-          {customElement.categories &&
-            customElement.categories.map((c, i) => (
-              <span
-                key={i}
-                className="tag tag--orange"
-                style={{
-                  margin: "6px",
-                }}
-              >
-                {c}
-              </span>
-            ))}
-        </div>
       </div>
-    </div>
+      <div className="card__content_bottom techs">
+        {customElement.tech &&
+          <span
+            className="tag tag--blue"
+            style={{
+              margin: "3px",
+            }}
+          >
+            {customElement.tech}
+          </span>
+        }
+      </div>
+    </div >
   )
 }
 

@@ -5,5 +5,7 @@
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-shopify",
   "categories": [
     "eCommerce"
-  ]
+  ],
+  "core": true,
+  "tech": "vanilla JS"
 }

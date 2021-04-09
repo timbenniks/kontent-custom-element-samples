@@ -16,19 +16,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <main id="main" className="overflow-hidden main"
-      style={{
-        paddingTop: "24px"
-      }}>
+        style={{
+          paddingTop: "24px"
+        }}>
         {children}
       </main>
       <footer
         className="grid"
         style={{
           margin: "24px auto",
-          textAlign:"right"
+          textAlign: "right"
         }}
       >
-        © 2004-{new Date().getFullYear()} Kentico
+        © {new Date().getFullYear()} Kentico
       </footer>
     </>
   )
