@@ -4,32 +4,13 @@ import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 function CustomElementCardListItem({ customElement }) {
   return (
-    < div className="card card--lg-2" >
-      {
-        customElement.core &&
-        <div class="tag core tag--orange">CORE INTEGRATION</div>
-      }
-      <div className="card__content_bottom categories">
-        {customElement.categories &&
-          customElement.categories.map((c, i) => (
-            <span
-              key={i}
-              className="tag"
-              style={{
-                margin: "3px",
-              }}
-            >
-              {c}
-            </span>
-          ))}
-      </div>
+    <div className="card card--lg-2">
       <a
         href={customElement.readmeUrl}
         className="card__link-outer"
         target="_blank"
-        style={{ display: "inline" }}
         rel="noopener noreferrer"
-        onClick={e => {
+        onClick={e=>{
           trackCustomEvent({
             category: "CESG",
             action: "Click Detail",
@@ -39,10 +20,7 @@ function CustomElementCardListItem({ customElement }) {
       ></a>
       <div className="card__content">
         <div className="card__heading  card__heading--small">
-          <h3>
-            {customElement.logoUrl &&
-              <img src={customElement.logoUrl} style={{ width: "20px", display: "inline", verticalAlign: "middle", marginRight: "10px" }}></img>}
-              {customElement.title}</h3>
+          <h3>{customElement.title}</h3>
         </div>
         <div
           className="card__image card__image--no-bg"
@@ -54,22 +32,24 @@ function CustomElementCardListItem({ customElement }) {
           <img src={customElement.thumbnailUrl.publicURL} alt="Screenshot of element in action" />
         </div>
         <div className="card__description">
-          <p dangerouslySetInnerHTML={{__html: customElement.description}}></p>
+          <p>{customElement.description}</p>
+        </div>
+        <div className="card__content-bottom">
+          {customElement.categories &&
+            customElement.categories.map((c, i) => (
+              <span
+                key={i}
+                className="tag tag--orange"
+                style={{
+                  margin: "6px",
+                }}
+              >
+                {c}
+              </span>
+            ))}
         </div>
       </div>
-      <div className="card__content_bottom techs">
-        {customElement.tech &&
-          <span
-            className="tag tag--blue"
-            style={{
-              margin: "3px",
-            }}
-          >
-            {customElement.tech}
-          </span>
-        }
-      </div>
-    </div >
+    </div>
   )
 }
 

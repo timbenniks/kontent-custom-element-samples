@@ -22,8 +22,9 @@ function FilterList({
       >
         <input
           type="text"
-          className={`input input--text input--white js-input input--cesg ${searchText.length > 0 ? "js-filled" : ""
-            }`}
+          className={`input input--text input--white js-input input--cesg ${
+            searchText.length > 0 ? "js-filled" : ""
+          }`}
           name="search"
           id="search"
           required=""
@@ -39,18 +40,19 @@ function FilterList({
         </label>
       </div>
 
-      <div className="filter__checkboxes">
-        <span class="heading" >Categories:</span>
-        {categories.map((category, i) => (
-          <FilterListItem
-            category={category}
-            id={i}
-            key={i}
-            onToggleCategory={c => onToggleCategory(c)}
-          />
-        ))}
+      <div className="filter__checkboxes list list--no-bullets accordion__list">
+        <ul>
+          {categories.map((category, i) => (
+            <FilterListItem
+              category={category}
+              id={i}
+              key={i}
+              onToggleCategory={c => onToggleCategory(c)}
+            />
+          ))}
+        </ul>
       </div>
-    </div >
+    </div>
   )
 }
 
