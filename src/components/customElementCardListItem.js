@@ -42,7 +42,7 @@ function CustomElementCardListItem({ customElement }) {
           <h3>
             {customElement.logoUrl &&
               <img src={customElement.logoUrl} style={{ width: "20px", display: "inline", verticalAlign: "middle", marginRight: "10px" }}></img>}
-              {customElement.title}</h3>
+            {customElement.title}</h3>
         </div>
         <div
           className="card__image card__image--no-bg"
@@ -58,6 +58,7 @@ function CustomElementCardListItem({ customElement }) {
         </div>
       </div>
       <div className="card__content_bottom techs">
+        <a style={{ float: "left", marginLeft: "20px", textDecoration: "none"}} >{customElement.readmeUrl.split("/")[3]}</a>
         {customElement.tech &&
           <span
             className="tag tag--blue"
