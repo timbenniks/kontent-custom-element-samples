@@ -27,6 +27,7 @@ function CustomElementCardListItem({ customElement }) {
         href={customElement.readmeUrl}
         className="card__link-outer"
         target="_blank"
+        style={{ display: "inline" }}
         rel="noopener noreferrer"
         onClick={e => {
           trackCustomEvent({
@@ -38,7 +39,10 @@ function CustomElementCardListItem({ customElement }) {
       ></a>
       <div className="card__content">
         <div className="card__heading  card__heading--small">
-          <h3>{customElement.title}</h3>
+          <h3>
+            {customElement.logoUrl &&
+              <img src={customElement.logoUrl} style={{ width: "20px", display: "inline", verticalAlign: "middle", marginRight: "10px" }}></img>}
+              {customElement.title}</h3>
         </div>
         <div
           className="card__image card__image--no-bg"
@@ -50,7 +54,7 @@ function CustomElementCardListItem({ customElement }) {
           <img src={customElement.thumbnailUrl.publicURL} alt="Screenshot of element in action" />
         </div>
         <div className="card__description">
-          <p>{customElement.description}</p>
+          <p dangerouslySetInnerHTML={{__html: customElement.description}}></p>
         </div>
       </div>
       <div className="card__content_bottom techs">

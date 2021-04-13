@@ -71,9 +71,9 @@ body {
 }
 
 .tag.tag--blue {
-  background-color: transparent;
+  background-color: rgb(55, 81, 124);
   font-weight: normal;
-  color: rgb(55, 81, 124);
+  color: white;
   border: 1px solid rgb(55, 81, 124);
 }
 

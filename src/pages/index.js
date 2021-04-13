@@ -27,7 +27,8 @@ const IndexPage = () => {
               readmeUrl
               thumbnailUrl {
                 publicURL
-              }
+              },
+              logoUrl,
               categories
               tech
               core
