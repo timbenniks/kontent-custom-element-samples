@@ -82,6 +82,11 @@ The element information JSON file named after your element's name in PascalCase 
 }
 ```
 
+### Release
+
+Release is automatically performed once the commit is done to `master` branch via [GitHub action](https://github.com/Kentico/kontent-custom-element-samples/actions/workflows/deploy.yml).
+
+
 ### Ideas
 
 We'd also appreciate if you [submit your ideas](https://github.com/Kentico/kontent-custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/kontent-custom-element-samples/issues).
