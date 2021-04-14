@@ -41,7 +41,7 @@ html {
 }
 
 body {
-      background-image: linear-gradient(135deg,#f3f4f5,#d3dff3);
+  background-image: linear-gradient(135deg,#f3f4f5,#d3dff3);
 }
 
 #logo {
@@ -104,3 +104,4 @@ span.category-option {
   text-decoration: none;
   color: inherit;
 }
+
