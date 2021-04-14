@@ -49,7 +49,7 @@ const IndexPage = () => {
       stateCategory => stateCategory.title === category.title
     )
     const newCategories = [...categories]
-    newCategories[index] = { ...category, selected: !category.selected }
+    newCategories[index] = { ...category, selected: !categories[index].selected }
     setCategories(newCategories)
   }
 
@@ -105,18 +105,18 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <a href="https://kontent.ai" target="_blank"><div id="logo"><img src="https://kontent.ai/img/general/logo.svg"></img></div></a>
+      <a href="https://kontent.ai" target="_blank" rel="noopener noreferrer"><div id="logo"><img src="https://kontent.ai/img/general/logo.svg"></img></div></a>
       <section className="section grid">
         <div className="grid__row">
           <div className="grid__col grid__col--12">
             <div className="js-pagination-list">
               <div className="heading heading--h2 heading--center heading--indent-content">
                 <h2>
-                  Custom element sample gallery
+                  Gallery of Custom Elements
                   <strong className="highlight">.</strong>
                 </h2>
               </div>
-              <div >
+              <div>
                 <div className="js-integrations-filter">
                   <FilterList
                     title=""
@@ -128,7 +128,9 @@ const IndexPage = () => {
               </div>
               <div className="grid__row">
                 <div className="grid__col grid__col--12">
-                  <CustomElementCardList customElements={filteredElements} />
+                  <CustomElementCardList
+                    customElements={filteredElements}
+                    onToggleCategory={c => toggleCategory(c)} />
                 </div>
               </div>
             </div>

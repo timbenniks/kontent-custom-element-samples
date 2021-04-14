@@ -1,5 +1,5 @@
 {
-  "title": "Vimeo Preview",
+  "title": "Vimeo preview",
   "description": "This custom element lets you to add and preview a Vimeo video. It extracts and stores the video id so it can later be used in the app.",
   "thumbnailUrl": "../assets/VimeoPreview.gif",
   "readmeUrl": "https://github.com/matus666/kontent-custom-element-vimeo-preview",
