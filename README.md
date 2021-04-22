@@ -10,8 +10,6 @@
 [![Stack Overflow][stack-shield]](https://stackoverflow.com/tags/kentico-kontent)
 [![GitHub Discussions][discussion-shield]](https://github.com/Kentico/Home/discussions)
 
-<hr />
-<br />
 
 ![CI deployment](https://github.com/Kentico/kontent-custom-element-samples/workflows/CI%20deployment/badge.svg?style=for-the-badge?style=for-the-badge)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7e07037-df60-476f-81ec-628ab95130bf/deploy-status?style=for-the-badge)](https://app.netlify.com/sites/kontent-custom-element-samples/deploys)
