@@ -112,7 +112,7 @@ const IndexPage = () => {
             <div className="js-pagination-list">
               <div className="heading heading--h2 heading--center heading--indent-content">
                 <h2>
-                  Gallery of Custom Elements
+                  Gallery of Custom Element samples
                   <strong className="highlight">.</strong>
                 </h2>
               </div>
