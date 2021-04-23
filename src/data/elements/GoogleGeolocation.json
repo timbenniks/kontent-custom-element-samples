@@ -1,1 +1,10 @@
-{"title":"Google geolocation","description":"Coordinates of a point on the planet.","thumbnailUrl":"../assets/GoogleGeolocation.png","readmeUrl":"https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/googleGeolocation","categories":["Geolocation"]}
+{
+  "title": "Google geolocation",
+  "description": "This custom element let's you pick and save an exact geolocation through Google maps.",
+  "thumbnailUrl": "../assets/GoogleGeolocation.png",
+  "readmeUrl": "https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/googleGeolocation",
+  "categories": [
+    "Utilities"
+  ],
+  "tech": "Svelte"
+}

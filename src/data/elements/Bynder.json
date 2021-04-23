@@ -1,1 +1,11 @@
-{"title":"Bynder","description":"Assets from Bynder.","thumbnailUrl":"../assets/Bynder.png","readmeUrl":"https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/bynder","categories":["Images"]}
+{
+  "title": "Bynder",
+  "description": "Upload, browse, and link your Bynder assets from Kontent.",
+  "thumbnailUrl": "../assets/Bynder.png",
+  "readmeUrl": "https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/bynder",
+  "categories": [
+    "Images",
+    "DAM"
+  ],
+  "tech": "Svelte"
+}

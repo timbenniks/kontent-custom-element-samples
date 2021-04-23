@@ -5,6 +5,7 @@
   "thumbnailUrl": "../assets/TypeSelector.gif",
   "readmeUrl": "https://github.com/Simply007/kontent-custom-element-type-selector",
   "categories": [
-    "Other"
-  ]
+    "Utilities"
+  ],
+  "tech": "Vanilla JS"
 }

@@ -1,1 +1,10 @@
-{"title":"HubSpot form","description":"A form from HubSpot.","thumbnailUrl":"../assets/HubspotForm.png","readmeUrl":"https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/hubSpotForm","categories":["Other"]}
+{
+  "title": "HubSpot forms",
+  "description": "Integrate with HubSpot and link your content with a selected HubSpot form (with preview)",
+  "thumbnailUrl": "../assets/HubspotForm.png",
+  "readmeUrl": "https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/hubSpotForm",
+  "categories": [
+    "Forms"
+  ],
+  "tech": "Svelte"
+}

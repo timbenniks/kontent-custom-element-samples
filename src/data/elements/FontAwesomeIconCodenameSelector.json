@@ -1,9 +1,10 @@
 {
-  "title": "Font Awesome Icon Codename Selector",
-  "description": "Custom element allowing to pick Font Awesome icon. Custom element stores the value as icon's codename.",
+  "title": "Font Awesome Icon codename selector",
+  "description": "Custom element allowing to pick <strong>Font Awesome icon</string>. Custom element stores the value as icon's codename.",
   "thumbnailUrl": "../assets/FontAwesomeIconCodenameSelector.gif",
-  "readmeUrl": "https://github.com/Simply007/kontent-custom-element-font-awesome-selector-codename",
+  "readmeUrl": "`https://github.com/Simply007/kontent-custom-element-font-awesome-selector-codename`",
   "categories": [
     "Icons"
-  ]
+  ],
+  "tech": "Vanilla JS"
 }

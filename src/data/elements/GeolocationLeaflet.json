@@ -4,6 +4,7 @@
   "thumbnailUrl": "../assets/GeolocationLeaflet.png",
   "readmeUrl": "https://github.com/hzik/kc_geolocation",
   "categories": [
-    "Geolocation"
-  ]
+    "Utilities"
+  ],
+  "tech": "Vanilla JS"
 }
