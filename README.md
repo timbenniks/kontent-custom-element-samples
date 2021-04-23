@@ -16,7 +16,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7e07037-df60-476f-81ec-628ab95130bf/deploy-status?style=for-the-badge)](https://app.netlify.com/sites/kontent-custom-element-samples/deploys)
 
 <hr />
-<br />
 
 <p align="center">
 <image src="kk-logo.svg" alt="kontent logo" width="300"/>
@@ -33,7 +32,8 @@
   <a href="#additional-resources">Resources</a>
 </p>
 
-<br />
+
+
 
 # Introduction
 A Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Kontent](https://kontent.ai/) app via the [Custom Elements API](https://docs.kontent.ai/reference/custom-elements-js-api).
@@ -42,7 +42,9 @@ The **Gallery of Custom Element samples** contains a list of different custom el
 
 The custom elements denoted as **core integration** are focusing on a selected subset of integrated services mentioned on https://kontent.ai/integrations. These integrations will have a richer documentation and their issues will be handled with higher priority. 
 
-<br />
+
+
+
 
 # ⚠ Disclaimer
 
@@ -56,13 +58,17 @@ The custom elements denoted as **core integration** are focusing on a selected s
 
 5) Some of the custom elements may contain a form of a **server/backend part** as well (_using Netlify functions, Azure functions, or Amazon Lambda functions_). In that case, the setup process will require deploying and configuring these services as well for the element to work. This should be always mentioned and described in the repository documentation as well. 
 
-<br />
+
+
+
 
 <p align="center">
 <a href="https://kentico.github.io/kontent-custom-element-samples/gallery" target="_blank"><image src="https://img.shields.io/static/v1?label=&message=Visit%20gallery&color=db3c00&style=for-the-badge" alt="visit gallery" width="200"/></a>
 </p>
 
-<br />
+
+
+
 
 
 # How to create your own custom element
@@ -83,12 +89,16 @@ The [/shared](https://github.com/Kentico/kontent-custom-element-samples/tree/mas
 <p align="center">
 <a href="https://kentico.github.io/kontent-custom-element-samples/shared/examples.html" target="_blank"><image src="https://img.shields.io/static/v1?label=&message=show%20markdown%20examples&color=blue&style=for-the-badge" alt="visit gallery" width="250"/></a>
 </p>
-<br />
+
+
+
 
 
 We recommend you clone the files and host them locally yourself. The `kentico-icons-v3.0.0.woff2` file needs to be hosted in the same directory as the CSS stylesheet to be properly linked.
 
-<br />
+
+
+
 
 
 # Feedback & Contributing
@@ -144,7 +154,9 @@ We'd also appreciate if you [submit your ideas](https://github.com/Kentico/konte
 
 Check out the [Contributing](https://github.com/Kentico/kontent-custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
 
-<br />
+
+
+
 
 # Contributors
 <a href="https://github.com/Kentico/kontent-custom-element-samples/graphs/contributors">

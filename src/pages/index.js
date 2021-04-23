@@ -104,7 +104,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Gallery of Custom Element samples" />
       <a href="https://kontent.ai" target="_blank" rel="noopener noreferrer"><div id="logo"><img src="https://kontent.ai/img/general/logo.svg"></img></div></a>
       <section className="section grid">
         <div className="grid__row">
