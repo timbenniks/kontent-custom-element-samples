@@ -4,6 +4,7 @@
   "thumbnailUrl": "../assets/DatePicker.gif",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-sample-date-picker",
   "categories": [
-    "Other"
-  ]
+    "Utilities"
+  ],
+  "tech": "Vanilla JS"
 }

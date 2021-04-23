@@ -4,6 +4,7 @@
   "thumbnailUrl": "../assets/ItemSynchronizer.gif",
   "readmeUrl": "https://github.com/hzik/ItemSynchronizer/",
   "categories": [
-    "Other"
-  ]
+    "Utilities"
+  ],
+  "tech": "Vanilla JS"
 }

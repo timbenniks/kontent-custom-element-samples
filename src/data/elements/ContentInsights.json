@@ -1,11 +1,10 @@
 {
   "title": "Content Insights",
-  "description": "Element analyzes content from text and rich text elements residing inside your content item. It analyses basic content properties like reading time, readability, and sentiment. It also generates a configurable number of keywords from the written content. On top of that, the custom element offers suggestions on how to improve your content.",
-
+  "description": "<strong>The Content Insights Element</strong> analyzes content from text and rich text elements and enriches your content with new content properties like reading time, readability score, sentiment, and configurable number of keywords. On top of that, the custom element offers suggestions on how to improve your content.",
   "thumbnailUrl": "../assets/ContentInsights.png",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-content-insights",
   "categories": [
-    "Text",
-    "HTML"
-  ]
+    "Analytics"
+  ],
+  "tech": "Vue.js"
 }

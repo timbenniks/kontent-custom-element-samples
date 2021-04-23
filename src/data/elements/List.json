@@ -1,1 +1,11 @@
-{"title":"List","description":"A list of zero or more validated items.","thumbnailUrl":"../assets/List.png","readmeUrl":"https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/list","categories":["Text","Other"]}
+{
+  "title": "List",
+  "description": "This custom element lets editors create a list of text elements.",
+  "thumbnailUrl": "../assets/List.png",
+  "readmeUrl": "https://github.com/yuriys-kentico/KenticoKontentKonservatory/tree/main/Client/src/routes/elements/list",
+  "categories": [
+    "Utilities",
+    "Text"
+  ],
+  "tech" : "Svelte"
+}

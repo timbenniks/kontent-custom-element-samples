@@ -4,8 +4,8 @@
   "thumbnailUrl": "../assets/TinyMCE.png",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-tinymce",
   "categories": [
-    "WYSIWYG",
-    "HTML",
+    "Editor",
     "Text"
-  ]
+  ],
+  "tech": "Vanilla JS"
 }
