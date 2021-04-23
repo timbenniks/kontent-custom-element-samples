@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `${'/gallery-image.png'}`,
+          content: `https://kentico.github.io/kontent-custom-element-samples/gallery/gallery-image.png`,
         },
         {
           name: `twitter:card`,
