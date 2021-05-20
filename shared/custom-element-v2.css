@@ -257,10 +257,10 @@ p+.form__group{
   white-space:nowrap;
 }
 @font-face{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-style:normal;
   font-weight:400;
-  src:url(kentico-icons-v3.0.0.woff2) format("woff2");
+  src:url(kentico-icons-v3.0.1.woff2) format("woff2");
 }
 .headline-large{
   font-size:24px;
@@ -412,7 +412,7 @@ p+.form__group{
 }
 [class*=" icon-"],[class^=icon-]{
   display:inline-block;
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -438,9 +438,6 @@ p+.form__group{
 }
 .icon-accordion:before{
   content:"\e704";
-}
-.icon-add-module:before{
-  content:"\e90e";
 }
 .icon-android:before{
   content:"\f17b";
@@ -558,6 +555,12 @@ p+.form__group{
 }
 .icon-box-cart:before{
   content:"\e6cd";
+}
+.icon-box-clock:before{
+  content:"\e928";
+}
+.icon-box-disc:before{
+  content:"\e61c";
 }
 .icon-boxes:before{
   content:"\e6cc";
@@ -1234,9 +1237,6 @@ p+.form__group{
 .icon-light-bulb:before{
   content:"\e67d";
 }
-.icon-lines-rectangle-o:before{
-  content:"\e6fd";
-}
 .icon-linux:before{
   content:"\f17c";
 }
@@ -1462,6 +1462,9 @@ p+.form__group{
 .icon-puzzle:before{
   content:"\e62a";
 }
+.icon-puzzle-plus:before{
+  content:"\e90e";
+}
 .icon-qr-code:before{
   content:"\e6eb";
 }
@@ -1485,6 +1488,9 @@ p+.form__group{
 }
 .icon-rectangle-a-o:before{
   content:"\e623";
+}
+.icon-rectangle-lines:before{
+  content:"\e6fd";
 }
 .icon-rectangle-o-h:before{
   content:"\e758";
@@ -1558,9 +1564,6 @@ p+.form__group{
 .icon-smartphone:before{
   content:"\e61d";
 }
-.icon-software-package:before{
-  content:"\e61c";
-}
 .icon-spinner:before{
   content:"\e61a";
 }
@@ -1623,9 +1626,6 @@ p+.form__group{
 }
 .icon-three-dots-vertical:before{
   content:"\e927";
-}
-.icon-timed-box:before{
-  content:"\e928";
 }
 .icon-times:before{
   content:"\e60e";
@@ -2139,7 +2139,7 @@ p+.form__group{
   min-height:40px;
 }
 .btn--square-m [class*=" icon-"],.btn--square-m [class^=icon-]{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:20px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -2158,7 +2158,7 @@ p+.form__group{
   min-height:24px;
 }
 .btn--square-xs [class*=" icon-"],.btn--square-xs [class^=icon-]{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -2221,7 +2221,7 @@ p+.form__group{
   min-height:32px;
 }
 .btn--square-sm [class*=" icon-"],.btn--square-sm [class^=icon-]{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -2240,7 +2240,7 @@ p+.form__group{
   min-height:48px;
 }
 .btn--square-l [class*=" icon-"],.btn--square-l [class^=icon-]{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:24px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -2757,7 +2757,7 @@ p+.form__group{
   color:#db0000;
 }
 .form__section-status--failed:before{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -2994,7 +2994,7 @@ input[type=checkbox]:disabled{
   margin-left:0;
 }
 .status:before{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -4123,7 +4123,7 @@ input[type=checkbox]:disabled{
   cursor:not-allowed;
 }
 .checkbox__symbol:before{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:15px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -4214,7 +4214,7 @@ input[type=checkbox]:disabled{
   border-radius:4px;
 }
 .option:before{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -4247,7 +4247,7 @@ input[type=checkbox]:disabled{
   padding-left:2px;
 }
 .option--is-checkbox:before{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:15px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -4571,7 +4571,7 @@ input:checked:disabled+.switch:before{
           user-select:none;
 }
 .tree__expand-action{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -4623,7 +4623,7 @@ input:checked:disabled+.switch:before{
   font-size:16px;
 }
 .tree__name--is-selectable:before,.tree__name:before{
-  font-family:kentico-icons-reskin;
+  font-family:kentico-icons;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   font-style:normal;
