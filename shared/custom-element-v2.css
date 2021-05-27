@@ -147,6 +147,7 @@ td,th{
   box-sizing:border-box;
 }
 body{
+  background-image:linear-gradient(135deg, #f3f4f5, #d3dff3);
   font-family:Inter,sans-serif;
   font-size:14px;
   font-weight:400;
@@ -622,7 +623,7 @@ p+.form__group{
   content:"\e914";
 }
 .icon-bubble:before{
-  content:"\e6c3";
+  content:"\e6f3";
 }
 .icon-bubble-censored:before{
   content:"\e6c2";
@@ -633,8 +634,8 @@ p+.form__group{
 .icon-bubble-hide:before{
   content:"\e91c";
 }
-.icon-bubble-o:before{
-  content:"\e6f3";
+.icon-bubble-inverted:before{
+  content:"\e6c3";
 }
 .icon-bubble-pencil:before{
   content:"\e911";
@@ -820,13 +821,13 @@ p+.form__group{
   content:"\f268";
 }
 .icon-circle:before{
-  content:"\e6ac";
+  content:"\f10c";
 }
 .icon-circle-dashed:before{
   content:"\e924";
 }
-.icon-circle-empty:before{
-  content:"\f10c";
+.icon-circle-inverted:before{
+  content:"\e6ac";
 }
 .icon-circle-slashed:before{
   content:"\e751";
@@ -901,7 +902,7 @@ p+.form__group{
   content:"\e756";
 }
 .icon-doc:before{
-  content:"\e69f";
+  content:"\e69c";
 }
 .icon-doc-arrows:before{
   content:"\e6fe";
@@ -912,11 +913,11 @@ p+.form__group{
 .icon-doc-copy:before{
   content:"\e69e";
 }
+.icon-doc-inverted:before{
+  content:"\e69f";
+}
 .icon-doc-move:before{
   content:"\e69d";
-}
-.icon-doc-o:before{
-  content:"\e69c";
 }
 .icon-doc-paste:before{
   content:"\e69a";
@@ -1000,7 +1001,7 @@ p+.form__group{
   content:"\e68f";
 }
 .icon-folder:before{
-  content:"\e68d";
+  content:"\e68b";
 }
 .icon-folder-belt:before{
   content:"\e715";
@@ -1008,8 +1009,8 @@ p+.form__group{
 .icon-folder-clock:before{
   content:"\e68c";
 }
-.icon-folder-o:before{
-  content:"\e68b";
+.icon-folder-inverted:before{
+  content:"\e68d";
 }
 .icon-folder-opened:before{
   content:"\e68a";
@@ -1432,10 +1433,10 @@ p+.form__group{
   content:"\e933";
 }
 .icon-pin:before{
-  content:"\e71e";
-}
-.icon-pin-o:before{
   content:"\e705";
+}
+.icon-pin-inverted:before{
+  content:"\e71e";
 }
 .icon-placeholder:before{
   content:"\e630";
@@ -1483,22 +1484,22 @@ p+.form__group{
   content:"\e910";
 }
 .icon-rectangle-a:before{
+  content:"\e623";
+}
+.icon-rectangle-a-inverted:before{
   content:"\e61e";
 }
-.icon-rectangle-a-o:before{
-  content:"\e623";
+.icon-rectangle-h:before{
+  content:"\e758";
 }
 .icon-rectangle-lines:before{
   content:"\e6fd";
 }
-.icon-rectangle-o-h:before{
-  content:"\e758";
-}
-.icon-rectangle-o-v:before{
-  content:"\e759";
-}
 .icon-rectangle-paragraph:before{
   content:"\e625";
+}
+.icon-rectangle-v:before{
+  content:"\e759";
 }
 .icon-restriction-list:before{
   content:"\e6ea";
@@ -1750,12 +1751,12 @@ p+.form__group{
   animation-timing-function:linear;
 }
 .slide-in-50{
-  animation:reskin-slide-in-50 .5s forwards;
+  animation:slide-in-50 .5s forwards;
 }
 .slide-out-50{
-  animation:reskin-slide-out-50 .5s forwards;
+  animation:slide-out-50 .5s forwards;
 }
-@keyframes reskin-slide-in-50{
+@keyframes slide-in-50{
   0%{
     transform:translateY(-100%);
   }
@@ -1763,7 +1764,7 @@ p+.form__group{
     transform:translateY(0);
   }
 }
-@keyframes reskin-slide-out-50{
+@keyframes slide-out-50{
   0%{
     max-height:50px;
     transform:translateY(0);
@@ -2322,49 +2323,6 @@ p+.form__group{
 .btn__icon--white{
   color:#fff;
 }
-.btn__icon-badge{
-  position:relative;
-}
-.btn__icon-badge:after{
-  position:absolute;
-  height:16px;
-  min-width:16px;
-  border-radius:10px;
-}
-.btn__icon-badge--empty:after{
-  top:-6px;
-  right:-6px;
-  content:"";
-}
-.btn__icon-badge[data-badge]:after{
-  font-family:GT Walsheim Pro,sans-serif;
-  font-size:11px;
-  font-weight:400;
-  line-height:11px;
-  top:-6px;
-  right:-10px;
-  display:flex;
-  padding:0 4px;
-  margin-right:4px;
-  align-items:center;
-  justify-content:center;
-  content:attr(data-badge);
-}
-.btn__icon-badge--orange:after{
-  color:#fff;
-  background:#f49100;
-}
-.btn__icon-badge--red:after{
-  color:#fff;
-  background:#db0000;
-}
-.btn__icon-badge--white:after{
-  color:#db0000;
-  background:#fff;
-}
-.btn__icon-badge[data-badge="0"]:after{
-  content:none;
-}
 .combo-box{
   display:flex;
   align-items:center;
@@ -2408,7 +2366,7 @@ p+.form__group{
 .combo-box:focus:not(.combo-box--is-disabled)::placeholder{
   color:transparent;
 }
-.combo-box--has-error{
+.combo-box--has-error,.combo-box--has-error:focus:not(.combo-box--is-disabled){
   border:1px solid #db0000;
 }
 .combo-box--with-default-option{
@@ -2792,12 +2750,12 @@ p+.form__group{
   margin-bottom:10px;
   color:#151515;
 }
-.form__label,.form__label--is-dark{
+.form__label,.form__label--is-bold{
   font-family:GT Walsheim Pro,sans-serif;
   font-size:14px;
   line-height:16px;
 }
-.form__label--is-dark{
+.form__label--is-bold{
   font-weight:700;
 }
 .form__text-field{
@@ -4240,10 +4198,6 @@ input[type=checkbox]:disabled{
 }
 .js-focus-visible .toggle__input--hidden:focus:not(.focus-visible)+.option{
   box-shadow:none;
-}
-.option--with-extra-label-distance:before{
-  padding-right:8px;
-  padding-left:2px;
 }
 .option--is-checkbox:before{
   font-family:kentico-icons;
