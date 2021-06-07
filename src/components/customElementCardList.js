@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 
 import CustomElementCardListItem from "./customElementCardListItem"
 
-function CustomElementCardList({ customElements }) {
+function CustomElementCardList({ customElements, onToggleCategory }) {
 
   return (
     <div className="cards">
       {customElements.map(customElement => (
-        <CustomElementCardListItem key={customElement.id} customElement={customElement} />
+        <CustomElementCardListItem key={customElement.id} customElement={customElement} onToggleCategory={c => onToggleCategory({ title: c })} />
       ))}
     </div>
   )

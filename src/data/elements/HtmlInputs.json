@@ -4,6 +4,7 @@
   "thumbnailUrl": "../assets/HtmlInputs.png",
   "readmeUrl": "https://github.com/hzik/kontent-custom-element-sample-html-inputs",
   "categories": [
-    "Other"
-  ]
+    "Utilities"
+  ],
+  "tech": "Vanilla JS"
 }
