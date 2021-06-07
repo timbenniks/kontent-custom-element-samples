@@ -7,5 +7,6 @@
   "categories": [
     "Search"
   ],
+  "core": true,
   "tech": "TypeScript"
 }
