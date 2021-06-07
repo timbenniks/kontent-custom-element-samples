@@ -5,5 +5,6 @@
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-svg-icon-selector",
   "categories": [
     "Icons"
-  ]
+  ],
+  "tech": "Vanilla JS"
 }

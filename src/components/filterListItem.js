@@ -1,21 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-function FilterListItem({ category, id, onToggleCategory}) {
+function FilterListItem({ category, id, onToggleCategory }) {
   return (
-    <li>
-      <label htmlFor={id} className="checkbox">
+    <span className="category-option">
+      <a href="#"><span id={id} className={category.selected ? "tag categories tag--orange" : "tag categories"} onClick={() => onToggleCategory(category)}>
         {category.title}
-        <input
-          id={id}
-          checked={category.selected}
-          name={id}
-          type="checkbox"
-          onChange={()=>onToggleCategory(category)}
-        ></input>
-        <span className="checkbox__indicator"></span>
-      </label>
-    </li>
+      </span></a>
+    </span>
   )
 }
 
